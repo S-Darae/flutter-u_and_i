@@ -430,6 +430,9 @@ class _DDay extends StatelessWidget {
 
 5.  **DDay 계산**
 
+- difference : 두 DateTime 값을 비교하는 함수
+- inDays : 기간을 날짜로 반환해주는 게터
+
 ```
     Text(
            "D+${DateTime(now.year, now.month, now.day).difference(firstDay).inDays + 1}"
@@ -440,9 +443,6 @@ class _DDay extends StatelessWidget {
 
 ```
     _DDay(
-          onMinusPressed: onMinusPressed,
-          onHeartPressed: onHeartPressed,
-          onPlusPressed: onPlusPressed,
           firstDay: firstDay,
          ),
 ```
