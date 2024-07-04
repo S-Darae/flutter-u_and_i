@@ -1,4 +1,4 @@
-# u_and_i
+# [디데이] u_and_i
 
 Cupertino Widget, CupertinoDatePicker, Font Component, Dialog, StatefulWidget 상태 관리
 
@@ -123,8 +123,6 @@ class _CoupleImage extends StatelessWidget {
 <br>
 
 ## 4️⃣ StatefulWidget 상태 관리
-
-1. '처음 만난 날'을 변숫값으로 저장하고 변경하면서 사용하기
 
 ```
 class _HomeScreenState extends State<HomeScreen> {
@@ -441,10 +439,10 @@ class _DDay extends StatelessWidget {
 6.  **변숫값을 매개변수로 입력**
 
 ```
-    \_DDay(
-            onMinusPressed: onMinusPressed,
-             onHeartPressed: onHeartPressed,
-            onPlusPressed: onPlusPressed,
-            firstDay: firstDay,
-           ),
+    _DDay(
+          onMinusPressed: onMinusPressed,
+          onHeartPressed: onHeartPressed,
+          onPlusPressed: onPlusPressed,
+          firstDay: firstDay,
+         ),
 ```
