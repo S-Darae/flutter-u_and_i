@@ -8,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -31,12 +30,12 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.w700,
             ),
             bodyLarge: TextStyle(
-              color: Color.fromARGB(220, 75, 53, 68),
+              color: Color.fromARGB(230, 75, 53, 68),
               fontSize: 22,
               fontWeight: FontWeight.w600,
             ),
             bodyMedium: TextStyle(
-              color: Color.fromARGB(210, 75, 53, 68),
+              color: Color.fromARGB(230, 75, 53, 68),
               fontWeight: FontWeight.w500,
               fontSize: 21,
             )),

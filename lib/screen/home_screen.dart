@@ -110,7 +110,7 @@ class _DDay extends StatelessWidget {
           "우리 처음 만난 날",
         ),
         const SizedBox(
-          height: 3,
+          height: 2,
         ),
         Text(
           "${firstDay.year}.${firstDay.month}.${firstDay.day}",
