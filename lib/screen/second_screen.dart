@@ -1,5 +1,4 @@
 // 디데이를 활용한 실습
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
