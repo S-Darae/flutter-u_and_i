@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:u_and_i/screen/second_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -59,16 +60,21 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         top: true,
         bottom: false,
-        child: Column(
+        child: PageView(
           children: [
-            _DDay(
-              onMinusPressed: onMinusPressed,
-              onHeartPressed: onHeartPressed,
-              onPlusPressed: onPlusPressed,
-              firstDay: firstDay,
+            Column(
+              children: [
+                _DDay(
+                  onMinusPressed: onMinusPressed,
+                  onHeartPressed: onHeartPressed,
+                  onPlusPressed: onPlusPressed,
+                  firstDay: firstDay,
+                ),
+                const Spacer(),
+                _CoupleImage(),
+              ],
             ),
-            const Spacer(),
-            _CoupleImage(),
+            const SecondScreen(),
           ],
         ),
       ),
@@ -80,8 +86,8 @@ class _DDay extends StatelessWidget {
   final GestureTapCallback onHeartPressed;
   final GestureTapCallback onPlusPressed;
   final GestureTapCallback onMinusPressed;
-
   final DateTime firstDay;
+
   const _DDay({
     required this.onHeartPressed,
     required this.firstDay,

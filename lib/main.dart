@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:u_and_i/screen/home_screen.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +12,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('ko', 'KR'), // Korean
+      ],
       title: 'U and I',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 252, 183, 206),
+          seedColor: const Color.fromARGB(255, 255, 232, 240),
         ),
         useMaterial3: true,
         fontFamily: 'Pretendard',
